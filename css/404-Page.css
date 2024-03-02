@@ -1,0 +1,99 @@
+p {
+  color: black;
+  width: 100%;
+  text-wrap: balance;
+  font-size: 27px;
+}
+
+body {
+  font-family: 'Albert Sans';
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  font-size: 70px;
+  color: #c10000;
+  font-family: 'Albert Sans';
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
+h2 {
+  font-size: 60px;
+  color: #c10000;
+  font-family: 'Albert Sans';
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.container {
+  padding: 25px;
+}
+
+section {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  display: table-cell;
+}
+
+button {
+  font-family: 'Albert Sans';
+  font-size: 15px;
+  background-color: #c10000;
+  width: 35%;
+  color: white;
+  padding: 15px;
+  margin: 0px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+#textLeft {
+  width: 81%;
+  padding-left: 50px;
+}
+
+#loginBox {
+  margin-right: 20px;
+  height: 100%;
+}
+
+#rightSide {
+  width: 47%;
+}
+
+#factText {
+  padding-top: 20px;;
+}
+
+#factButton {
+  width: 30%;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+a {
+  color: white;
+}
+
+#notFound {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+hr {
+  margin-top: 70px;
+}
+
+#footerText {
+  font-size: 20px;
+}

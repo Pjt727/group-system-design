@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Philosophy</title>
+    <style>
+        div {
+            padding: 5px 5px 5px 5px ;
+            margin: 5px 5px 5px 5px ;
+        }
+        .card   {
+            height: 90%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin: auto;
+            background-position: center;
+            height: 90%;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: whitesmoke;
+            color: firebrick;
+            margin-top: -15px;
+            margin-left: -15px;
+            width: 100% + 15px;
+        }
+
+        .logo {
+            width: 350px;
+            height: 120px;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a {
+            font-size: 3rem;
+            color: red;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .more   {
+            border-radius: 11px;
+            box-sizing: border-box;
+            justify-content: center;
+            background: red;
+            color: black;
+            display: flex;
+            width: 20%;
+            height: 20px;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="home.html">
+        <img src="https://github.com/Pjt727/group-system-design/blob/main/img/CampusInkLogo.png?raw=true" alt="Logo" class="logo">
+    </a>
+    <div class="nav-links">
+        <a href="404-Page.html">Our Competition</a>
+        <a href="#">Design Philosophy</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+   <div id="btmMain" style="width: 60%; margin: auto">
+       <div id="bt1" style="width: 60%; margin: auto; height: 400px">
+           <div id="DP" class="card" style="float: left; width: 45%;
+           background: url(https://zight.com/wp-content/uploads/2019/11/6-Crucial-Elements-and-Principles-of-Design.jpg); "
+                onmouseover="dpHover()" onmouseleave="dpLeave()">
+               <h2><strong>Design Philosophy</strong></h2>
+
+           </div>
+           <div id="PS" class="card" style="float: left; width: 45%;
+           background: url(https://auo.org.uk/wp-content/uploads/2022/10/kisspng-implementation-problem-solving-business-collaborat-innovation-5abfc6ff88f740.700174331522517759561-300x300.png);"
+                onmouseover="psHover()" onmouseleave="psLeave()">
+               <h2><strong>Problem Solving</strong></h2>
+           </div>
+           <br style="clear: left">
+       </div>
+       <div id="btm2" style="marign: auto; height: 400px">
+           <div id="cv" class="card" style="float: left; width: 30%;
+           background: url(https://deerdesigner.com/wp-content/uploads/mktng023-10-Ways-you-can-make-your-web-design-more-accessible-01.png)"
+           onmouseover="cvHover()" onmouseleave="cvLeave()">
+               <h2><strong>Core Values</strong></h2>
+           </div>
+           <div id="rlt" class="card" style="float: left; width: 30%;
+           background: url(https://drexel.edu/~/media/Images/graduatecollege/blog-graduate/Relationship.ashx?h=494&w=640&hash=56E7D6A9949828D3F430B8BBA62FA4C38240A6C3);"
+           onmouseover="rltHover()" onmouseleave="rltLeave()">
+               <h2><strong>Client Relationships</strong></h2>
+           </div>
+           <div id="trend" class="card" style="float: left; width: 30%;
+           background: url(https://connect.redhat.com/sites/default/files/2021-03/os.png);"
+           onmouseover="trendHover()" onmouseleave="trendLeave()">
+               <h2><strong>Innovations and Trends</strong></h2>
+           </div>
+           <br style="clear: left">
+       </div>
+   </div>
+    <div>
+        <a href="404-Page.html">
+            <button class="more">Learn More</button>
+        </a>
+    </div>
+<script>
+    function dpHover(){
+        document.getElementById("DP").innerHTML = '<strong>Design Philosophy </strong> <br> Every group has its innate unique identity. We believe designs should work with and around this identity in the most natural way possible.';
+        document.getElementById("DP").style.background = 'none';
+    }
+    function dpLeave(){
+        document.getElementById("DP").innerHTML = '<h2><strong> Design Philosophy</strong></h2>';
+        document.getElementById("DP").style.background = "url(https://zight.com/wp-content/uploads/2019/11/6-Crucial-Elements-and-Principles-of-Design.jpg)";
+        document.getElementById("DP").style.backgroundPosition = "center";
+        document.getElementById("DP").style.backgroundSize = "contain";
+        document.getElementById("DP").style.backgroundRepeat = "no-repeat";
+    }
+    function psHover(){
+        document.getElementById("PS").innerHTML = '<strong>Problem Solving </strong> <br>  Simplicity is key, everything from production to delivery logistics is handled by our systems. We want to service all clients regardless otheir technological skill or design experience, so we strive to make our systems as simple and intuitive as possible.';
+        document.getElementById("PS").style.background = 'none';
+    }
+    function psLeave(){
+        document.getElementById("PS").innerHTML = '<h2><strong>Problem Solving</strong></h2>';
+        document.getElementById("PS").style.background = "url(https://auo.org.uk/wp-content/uploads/2022/10/kisspng-implementation-problem-solving-business-collaborat-innovation-5abfc6ff88f740.700174331522517759561-300x300.png)";
+        document.getElementById("PS").style.backgroundPosition = "center";
+        document.getElementById("PS").style.backgroundSize = "contain";
+        document.getElementById("PS").style.backgroundRepeat = "no-repeat";
+    }
+    function cvHover(){
+        document.getElementById("cv").innerHTML = '<strong>Core Values </strong> <br> <ul>\n' +
+            '            <li> Accessibility: Every club/ team no matter the size should be able to have curated items.\n' +
+            '            <li> Positivity: Designs are the first impression your club makes on outsiders. These designs should highlight the positive impacts and nature of your club.\n' +
+            '            <li> Diversity: Every club/ team no matter of race, gender identity, body shape, or disabilities should have items which speak for them.\n' +
+            '        </ul>';
+        document.getElementById("cv").style.background = 'none';
+    }
+    function cvLeave(){
+        document.getElementById("cv").innerHTML = '<h2><strong>Core Values</strong></h2> ';
+        document.getElementById("cv").style.background = "url(https://deerdesigner.com/wp-content/uploads/mktng023-10-Ways-you-can-make-your-web-design-more-accessible-01.png)";
+        document.getElementById("cv").style.backgroundPosition = "center";
+        document.getElementById("cv").style.backgroundSize = "contain";
+        document.getElementById("cv").style.backgroundRepeat = "no-repeat";
+    }
+    function rltHover(){
+        document.getElementById("rlt").innerHTML = '<strong>Client Relationships</strong> <br>  We work closely with club leaders and organizations as a whole to make sure our designs embrace your group’s identity.\n' +
+            ' Feedback and input are always encouraged!';
+        document.getElementById("rlt").style.background = 'none';
+    }
+    function rltLeave(){
+        document.getElementById("rlt").innerHTML = '<h2><strong>Client Relationships</strong></h2>';
+        document.getElementById("rlt").style.background = "url(https://drexel.edu/~/media/Images/graduatecollege/blog-graduate/Relationship.ashx?h=494&w=640&hash=56E7D6A9949828D3F430B8BBA62FA4C38240A6C3)";
+        document.getElementById("rlt").style.backgroundPosition = "center";
+        document.getElementById("rlt").style.backgroundSize = "contain";
+        document.getElementById("rlt").style.backgroundRepeat = "no-repeat";
+    }
+    function trendHover(){
+        document.getElementById("trend").innerHTML = '<strong>Innovations and Trends </strong> <br>  <ul>\n' +
+            '            <li>Website and app\n' +
+            '            <li>Integration with other popular apps such as discord that colleges already use for clubs.\n' +
+            '            <li>Integration with storefronts that can provide t-shirt/ other items designs.\n' +
+            '            <li>Possible use of large language models for generation of unique artwork when designing items.\n' +
+            '        </ul>';
+        document.getElementById("trend").style.background = 'none';
+    }
+    function trendLeave(){
+        document.getElementById("trend").innerHTML = '<h2><strong>Innovations and Trends</strong></h2>';
+        document.getElementById("trend").style.background = "url(https://connect.redhat.com/sites/default/files/2021-03/os.png)";
+        document.getElementById("trend").style.backgroundPosition = "center";
+        document.getElementById("trend").style.backgroundSize = "contain";
+        document.getElementById("trend").style.backgroundRepeat = "no-repeat";
+    }
+
+
+</script>
+
+</body>
+</html>

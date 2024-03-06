@@ -4,12 +4,141 @@
 <head>
   <title> 404-Page </title>
   <meta charset="UTF-8">
-  <link href="../css/404-Page.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Albert Sans" rel="stylesheet">
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: whitesmoke;
+      color: firebrick;
+      margin-top: -15px;
+      margin-left: -15px;
+      width: 100% + 15px;
+    }
+
+    .logo {
+      width: 350px;
+      height: 120px;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links a {
+      font-size: 3rem;
+      color: red;
+      text-decoration: none;
+      margin-right: 30px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      color: black;
+      width: 100%;
+      text-wrap: balance;
+      font-size: 27px;
+    }
+
+    body {
+      background-color: white;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    h1 {
+      font-size: 70px;
+      color: #c10000;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding-right: 25px;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: #c10000;
+      margin-top: 50px;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      padding: 25px;
+    }
+
+    section {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+
+    article {
+      display: table-cell;
+    }
+
+    button {
+      font-family: 'Albert Sans';
+      font-size: 15px;
+      background-color: #c10000;
+      width: 35%;
+      color: white;
+      padding: 15px;
+      margin: 0px 0px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #textLeft {
+      width: 81%;
+      padding-left: 50px;
+    }
+
+    #loginBox {
+      margin-right: 20px;
+      height: 100%;
+    }
+
+    #rightSide {
+      width: 47%;
+    }
+
+    #factText {
+      padding-top: 20px;;
+    }
+
+    #factButton {
+      width: 30%;
+      padding: 15px;
+      margin: 10px 0px;
+    }
+
+    #notFound {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    #footerText {
+      font-size: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <script src="../js/404-Page.js"> </script>
+  <nav class="navbar">
+    <a href="home.html">
+        <img src="https://github.com/Pjt727/group-system-design/blob/main/img/CampusInkLogo.png?raw=true" alt="Logo" class="logo">
+    </a>
+    <div class="nav-links">
+        <a href="404-Page.html">Our Competition</a>
+        <a href="Philosophy.html">Design Philosophy</a>
+        <a href="#">About</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+  </nav>
   <section>
     <article>
       <div id="textLeft">
@@ -17,9 +146,9 @@
         <p> We knocked over our ink and couldn't find the page you were looking for. 
           We're sorry about that. Maybe these buttons could help? </p>
         <p> Want to head back home? </p>
-        <button type="button" onclick=""> Homepage </button>
+        <button type="button" onclick="goToHomepage()"> Homepage </button>
         <p> Want to reach out to us? </p>
-        <button type="button" onclick=""> Contact Us </button>
+        <button type="button" onclick="goToContact()"> Contact Us </button>
       </div>
     </article>
 
@@ -42,5 +171,32 @@
 
 <footer>
 </footer>
+
+<script>
+  function goToHomepage() {
+    location.href = "home.html";
+  }
+
+  function goToContact() {
+    location.href = "Contact.html";
+  }
+
+  const facts = ["The earth’s circumference is 24,900 miles.", 
+            "The bumblebee bat is the world’s smallest mammal.", 
+            "There’s enough gold inside Earth to coat the planet.",
+            "Elephants can’t jump.",
+            "Lemons float, but limes sink.",
+            "Armadillo shells are bulletproof.",
+            "The longest English word is 189,819 letters long.",
+            "The first footprints on the moon will remain there for a million years.",
+            "Blue whales eat half a million calories in one mouthful.",
+            "President Theodore Roosevelt had a pet hyena."
+  ];
+
+  function generateFact() {
+    var randomNumber = Math.floor(Math.random() * facts.length);
+    document.getElementById('factDisplay').innerHTML = facts[randomNumber];
+  }
+</script>
 
 </html>
